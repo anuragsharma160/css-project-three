@@ -8,3 +8,5 @@
     - Media query
 
 2. Honest time to finish this project - 20 days
+
+3. Live link of the project - [CSS-Assignment-3](https://css-project-three-omega.vercel.app/ "Link")
