@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", "Cursive";
+}
+
+body {
+  background-color: #352e2e;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px;
+  margin: 20px auto 40px auto;
+  font-family: "Dela Gothic";
+}
+
+.list-div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 65%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  color: #b3b3b3;
+  width: 60%;
+}
+
+.order-btn {
+  display: flex;
+  align-items: center;
+}
+
+.button-small {
+  padding: 0.7em 1.5em 0.8em 1.5em;
+  background-color: transparent;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  border-radius: 8px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.hero-sec {
+  margin: 0 auto 80px auto;
+  padding: 0px 100px;
+  /* font-family: "Red Rose"; */
+  font-family: "Sans serif";
+}
+
+.hero-div {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.heading {
+  font-size: 90px;
+}
+
+ul .list-item:hover{
+  opacity: 1;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+p.content {
+  font-size: 22.5px;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  line-height: 35px;
+  font-weight: 100;
+  justify-content: end;
+  padding-left: 30px;
+}
+
+div.bg-img {
+  height: 530px;
+  display: block;
+  background-image: url("./assets/pexels-ekaterina-bolovtsova-6077327.jpg");
+  /* background-size: cover;
+  background-size: 100% 100%; */
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  /* background-position: 0px 0px; */
+  position: relative;
+  left: 0px;
+  right: 0px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+
+  .list{
+    display: block;
+    width: 100%;
+  }
+
+  .heading{
+    font-size: 28px;
+  }
+
+  p.content{
+    font-size: 13.5px;
+    line-height: 30px;
+    padding: 0px;
+  }
+
+  .navbar{
+    margin: 0px 0px 10px 0px;
+  }
+
+  .button-small{
+    padding: 0.7em 1.5em 0.8em 1.5em;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .hero-sec{
+    padding: 0px 10px;
+    margin: 0px 0px 20px 0px;
+    margin: -5px 0px 20px 0px;
+  }
+
+  .hero-div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  body div.bg-img{
+    margin-top: -20px;
+    height: 150px;
+  }
+
+  [align="right"]{
+    height: auto;
+    display: flex;
+    justify-content: end;
+  }
+
+  img[src="./assets/prev-arrow.png"]{
+    height: 100px;
+  }
+
+  img[src="./assets/next-arrow.png"]{
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .list-div{
+    display: block;
+    width: 100%;
+  }
+
+  .list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .heading{
+    font-size: 30px;
+  }
+
+  p.content{
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0px;
+  }
+
+  .button-small{
+    padding: 0.7em 1.5em 0.8em 1.5em;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .hero-sec{
+    padding: 0px 10px;
+    margin: 0px 0px 20px 0px;
+  }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .list-div{
+    display: block;
+    width: 100%;
+  }
+
+  .list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .heading{
+    font-size: 30px;
+  }
+
+  p.content{
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0px;
+  }
+
+  .button-small{
+    padding: 0.7em 1.5em 0.8em 1.5em;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .hero-sec{
+    padding: 0px 10px;
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+
+@media screen and (min-width: 961px) and (max-width: 1280px) {
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .list-div{
+    display: block;
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .heading{
+    font-size: 40px;
+  }
+
+  p.content{
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0px;
+  }
+
+  .button-small{
+    padding: 0.7em 1.5em 0.8em 1.5em;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .hero-sec{
+    padding: 0px 50px;
+    margin: 0px 0px 20px 0px;
+  }
+}
